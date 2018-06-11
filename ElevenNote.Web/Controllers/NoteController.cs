@@ -16,10 +16,11 @@ namespace ElevenNote.Web.Controllers
         {
             var service = CreateNoteService();
             var model = service.GetNotes();
+          
 
             return View(model);
         }
-
+        //GET
         public ActionResult Create()
         {
             return View();
